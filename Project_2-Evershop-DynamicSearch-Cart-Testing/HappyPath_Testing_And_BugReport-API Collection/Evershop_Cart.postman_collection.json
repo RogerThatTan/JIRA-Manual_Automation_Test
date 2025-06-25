@@ -1,0 +1,548 @@
+{
+  "info": {
+    "_postman_id": "2fcd2c88-9370-47e1-8bbe-5580bff072e1",
+    "name": "Evershop Cart",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "44592821",
+    "_collection_link": "https://rogerthattan-7310090.postman.co/workspace/RogerThatTan's-Workspace~989b2255-5ba6-4464-8ad6-b9ab0186da40/collection/44592821-2fcd2c88-9370-47e1-8bbe-5580bff072e1?action=share&source=collection_link&creator=44592821"
+  },
+  "item": [
+    {
+      "name": "SearchProduct",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://demo.evershop.io/search?keyword=Nike react",
+          "protocol": "https",
+          "host": ["demo", "evershop", "io"],
+          "path": ["search"],
+          "query": [
+            {
+              "key": "keyword",
+              "value": "Nike react"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "SearchProductResult",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://demo.evershop.io/search?keyword=Nike react",
+              "protocol": "https",
+              "host": ["demo", "evershop", "io"],
+              "path": ["search"],
+              "query": [
+                {
+                  "key": "keyword",
+                  "value": "Nike react"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Length",
+              "value": "15533"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json",
+              "description": "",
+              "type": "text"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 04 Jun 2025 08:55:16 GMT"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"3cad-gjhfM0nxsDN7S4c0vAFqi+FtoUU\""
+            },
+            {
+              "key": "request-context",
+              "value": "appId=cid-v1:"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            }
+          ],
+          "cookie": [
+            {
+              "expires": "Invalid Date"
+            }
+          ],
+          "body": "{\n    \"graphqlResponse\": {\n        \"e248uix4m5ibqamc\": \"https://demo.evershop.io/search\",\n        \"e248uix4m5ibqamd\": {\n            \"total\": 2,\n            \"currentFilters\": [\n                {\n                    \"key\": \"keyword\",\n                    \"operation\": \"eq\",\n                    \"value\": \"Nike react\"\n                },\n                {\n                    \"key\": \"page\",\n                    \"operation\": \"eq\",\n                    \"value\": \"1\"\n                },\n                {\n                    \"key\": \"limit\",\n                    \"operation\": \"eq\",\n                    \"value\": \"20\"\n                }\n            ]\n        },\n        \"e248uix4m5ibqamf\": {\n            \"items\": [\n                {\n                    \"productId\": 171,\n                    \"name\": \"Nike react infinity run flyknit\",\n                    \"sku\": \"NJC44141-Purple-L\",\n                    \"price\": {\n                        \"regular\": {\n                            \"value\": 543,\n                            \"text\": \"$543.00\"\n                        },\n                        \"special\": {\n                            \"value\": 543,\n                            \"text\": \"$543.00\"\n                        }\n                    },\n                    \"image\": {\n                        \"alt\": \"Nike react infinity run flyknit\",\n                        \"url\": \"https://demositefiles.blob.core.windows.net/images/catalog/9381/3866/plv3878-Purple-listing.png\"\n                    },\n                    \"url\": \"/nike-react-infinity-run-flyknit-171\"\n                },\n                {\n                    \"productId\": 160,\n                    \"name\": \"Nike odyssey react flyknit 2\",\n                    \"sku\": \"NJC93155-Pink-XL\",\n                    \"price\": {\n                        \"regular\": {\n                            \"value\": 857,\n                            \"text\": \"$857.00\"\n                        },\n                        \"special\": {\n                            \"value\": 857,\n                            \"text\": \"$857.00\"\n                        }\n                    },\n                    \"image\": {\n                        \"alt\": \"Nike odyssey react flyknit 2\",\n                        \"url\": \"https://demositefiles.blob.core.windows.net/images/catalog/1939/9584/plv6734-Pink-listing.png\"\n                    },\n                    \"url\": \"/women/nike-odyssey-react-flyknit-2-160\"\n                }\n            ]\n        },\n        \"e248uix4m5ibqami\": \"https://demo.evershop.io/cart\",\n        \"e248uix4m5ibqamj\": null,\n        \"e248uix4m5ibqamk\": {\n            \"breadcrumbs\": [\n                {\n                    \"title\": \"Home\",\n                    \"url\": \"/\"\n                },\n                {\n                    \"title\": \"Search results for: Nike react\",\n                    \"url\": \"https://demo.evershop.io/search?keyword=Nike%20react\"\n                }\n            ]\n        },\n        \"e248uix4m5ibqaml\": {\n            \"copyRight\": \"© 2022 Evershop. All Rights Reserved.\"\n        },\n        \"e248uix4m5ibqamm\": {\n            \"title\": \"Search results for: Nike react\",\n            \"description\": \"Search results for: Nike react\"\n        },\n        \"e248uix4m5ibqamn\": {\n            \"headTags\": {\n                \"metas\": [\n                    {\n                        \"name\": \"robots\",\n                        \"content\": \"noindex\",\n                        \"charSet\": null,\n                        \"httpEquiv\": null,\n                        \"property\": null,\n                        \"itemProp\": null,\n                        \"itemType\": null,\n                        \"itemID\": null,\n                        \"lang\": null\n                    }\n                ],\n                \"links\": [],\n                \"scripts\": [],\n                \"base\": null\n            }\n        },\n        \"e248uix4m5ibqamo\": {\n            \"logo\": {\n                \"src\": null,\n                \"alt\": null,\n                \"width\": null,\n                \"height\": null\n            }\n        },\n        \"e248uix4m5ibqamp\": null,\n        \"e248uix4m5ibqamq\": \"https://demo.evershop.io/account\",\n        \"e248uix4m5ibqamr\": \"https://demo.evershop.io/account/login\",\n        \"e4ov33uxmbhppeni\": {\n            \"menus\": [\n                {\n                    \"id\": \"4ov33uxmbhppeo5\",\n                    \"name\": \"Shop ❤️\",\n                    \"url\": \"javascript:void(0)\",\n                    \"type\": \"custom\",\n                    \"uuid\": \"javascript:void(0)\",\n                    \"children\": [\n                        {\n                            \"name\": \"Men\",\n                            \"url\": \"/men\",\n                            \"type\": \"custom\",\n                            \"uuid\": \"/men\"\n                        },\n                        {\n                            \"name\": \"Women\",\n                            \"url\": \"/women\",\n                            \"type\": \"custom\",\n                            \"uuid\": \"/women\"\n                        }\n                    ]\n                },\n                {\n                    \"id\": \"4ov33uxmbhppeo8\",\n                    \"name\": \"About us\",\n                    \"url\": \"/page/about-us\",\n                    \"type\": \"custom\",\n                    \"uuid\": \"/page/about-us\",\n                    \"children\": []\n                }\n            ],\n            \"isMain\": true,\n            \"className\": \"\"\n        }\n    },\n    \"propsMap\": {\n        \"137dcfd8bf7950dd6201684efdcb40a1\": [\n            {\n                \"origin\": \"searchPageUrl\",\n                \"alias\": \"e248uix4m5ibqamc\"\n            }\n        ],\n        \"53a5c4e443c686e83ed07c4024cb9005\": [],\n        \"cd65308b660ab08acbf37587da8b8cec\": [\n            {\n                \"origin\": \"products\",\n                \"alias\": \"e248uix4m5ibqamd\"\n            }\n        ],\n        \"8258d32f10368fb12b468d1934c39e7c\": [\n            {\n                \"origin\": \"products\",\n                \"alias\": \"e248uix4m5ibqamf\"\n            }\n        ],\n        \"73803fc0a7d90e8e0ef8a16b1a64f089\": [],\n        \"8e6938817356c0764e16d9dc7d99d4d3\": [],\n        \"5248a628c0ba0eb2edc726fbc70778f8\": [\n            {\n                \"origin\": \"cartUrl\",\n                \"alias\": \"e248uix4m5ibqami\"\n            },\n            {\n                \"origin\": \"cart\",\n                \"alias\": \"e248uix4m5ibqamj\"\n            }\n        ],\n        \"45515ab09f9ce8f561fc40ca4ffb7b2f\": [\n            {\n                \"origin\": \"pageInfo\",\n                \"alias\": \"e248uix4m5ibqamk\"\n            }\n        ],\n        \"03ce62a99b643c53cea33f6fc2c573f5\": [\n            {\n                \"origin\": \"themeConfig\",\n                \"alias\": \"e248uix4m5ibqaml\"\n            }\n        ],\n        \"170528765f0295e4db900fd92ea387bc\": [\n            {\n                \"origin\": \"pageInfo\",\n                \"alias\": \"e248uix4m5ibqamm\"\n            },\n            {\n                \"origin\": \"themeConfig\",\n                \"alias\": \"e248uix4m5ibqamn\"\n            }\n        ],\n        \"2aa0bf53e05360bd37f2dd0982998263\": [],\n        \"a20b83833c6ae10ded5077b0943cfef5\": [\n            {\n                \"origin\": \"themeConfig\",\n                \"alias\": \"e248uix4m5ibqamo\"\n            }\n        ],\n        \"18bf66723f1e3394e1ebb5dce01e8097\": [],\n        \"fef4b1d9ae2122930f9c33edbb982d6e\": [\n            {\n                \"origin\": \"customer\",\n                \"alias\": \"e248uix4m5ibqamp\"\n            },\n            {\n                \"origin\": \"accountUrl\",\n                \"alias\": \"e248uix4m5ibqamq\"\n            },\n            {\n                \"origin\": \"loginUrl\",\n                \"alias\": \"e248uix4m5ibqamr\"\n            }\n        ],\n        \"b9b0aede0abb0546fe77c67089bdd6f5\": [\n            {\n                \"origin\": \"collection\",\n                \"alias\": \"e248uix4m5ibqams\"\n            }\n        ],\n        \"78d4735155d485f34d387c8394613fb7\": [\n            {\n                \"origin\": \"textWidget\",\n                \"alias\": \"e248uix4m5ibqamw\"\n            }\n        ],\n        \"d71e8a0220472a4a5360ae305aa98d5b\": [\n            {\n                \"origin\": \"basicMenuWidget\",\n                \"alias\": \"e248uix4m5ibqan0\"\n            }\n        ],\n        \"e9869af9cb99540caac4704f0a1d6de86\": [\n            {\n                \"origin\": \"basicMenuWidget\",\n                \"alias\": \"e4ov33uxmbhppeni\"\n            }\n        ]\n    },\n    \"widgets\": [\n        {\n            \"sortOrder\": 1,\n            \"areaId\": [\n                \"header\"\n            ],\n            \"type\": \"basic_menu\",\n            \"id\": \"e9869af9cb99540caac4704f0a1d6de86\"\n        }\n    ],\n    \"notifications\": []\n}"
+        }
+      ]
+    },
+    {
+      "name": "AddToCart",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"qty\":\"1\",\r\n    \"sku\":\"NJC44141-Purple-L\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://demo.evershop.io/api/cart/mine/items",
+          "protocol": "https",
+          "host": ["demo", "evershop", "io"],
+          "path": ["api", "cart", "mine", "items"]
+        }
+      },
+      "response": [
+        {
+          "name": "AddToCartResult",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"qty\":\"1\",\r\n    \"sku\":\"NJC44141-Purple-L\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://demo.evershop.io/api/cart/mine/items",
+              "protocol": "https",
+              "host": ["demo", "evershop", "io"],
+              "path": ["api", "cart", "mine", "items"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Length",
+              "value": "1096"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 04 Jun 2025 09:09:50 GMT"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"448-x3ez4Au/yUF5q2wFOl2E3jM9EwY\""
+            },
+            {
+              "key": "request-context",
+              "value": "appId=cid-v1:"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"data\": {\n        \"item\": {\n            \"uuid\": \"b25c9da3-c107-47d5-9b9f-6561cd7a125f\",\n            \"product_id\": 171,\n            \"productUrl\": \"/nike-react-infinity-run-flyknit-171\",\n            \"product_uuid\": \"ed6ddd29-f245-4088-8255-de4804fb04a5\",\n            \"product_sku\": \"NJC44141-Purple-L\",\n            \"group_id\": 1,\n            \"category_id\": null,\n            \"product_name\": \"Nike react infinity run flyknit\",\n            \"thumbnail\": \"https://demositefiles.blob.core.windows.net/images/catalog/9381/3866/plv3878-Purple-thumb.png\",\n            \"product_weight\": 9.4,\n            \"tax_class_id\": 1,\n            \"qty\": 1,\n            \"variant_group_id\": 100,\n            \"variant_options\": \"[{\\\"attribute_code\\\":\\\"size\\\",\\\"attribute_name\\\":\\\"Size\\\",\\\"attribute_id\\\":2,\\\"option_id\\\":6,\\\"option_text\\\":\\\"L\\\"},{\\\"attribute_code\\\":\\\"color\\\",\\\"attribute_name\\\":\\\"Color\\\",\\\"attribute_id\\\":3,\\\"option_id\\\":27,\\\"option_text\\\":\\\"Purple\\\"}]\",\n            \"tax_percent\": 0,\n            \"product_price\": 543,\n            \"product_price_incl_tax\": 543,\n            \"tax_amount_before_discount\": 0,\n            \"final_price\": 543,\n            \"final_price_incl_tax\": 543,\n            \"line_total\": 543,\n            \"line_total_incl_tax\": 543,\n            \"discount_amount\": 0,\n            \"tax_amount\": 0,\n            \"line_total_with_discount\": 543,\n            \"line_total_with_discount_incl_tax\": 543,\n            \"errors\": {}\n        },\n        \"count\": 1,\n        \"cartId\": \"3bf60ab428c54e9b98e6ebbd62fce1cf\"\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "CartDetails",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://demo.evershop.io/cart",
+          "protocol": "https",
+          "host": ["demo", "evershop", "io"],
+          "path": ["cart"]
+        }
+      },
+      "response": [
+        {
+          "name": "CartDetailsResult",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://demo.evershop.io/cart",
+              "protocol": "https",
+              "host": ["demo", "evershop", "io"],
+              "path": ["cart"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "html",
+          "header": [
+            {
+              "key": "Content-Length",
+              "value": "17978"
+            },
+            {
+              "key": "Content-Type",
+              "value": "text/html; charset=utf-8"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 04 Jun 2025 09:09:53 GMT"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"463a-Pf6azjLxs1mVUhoZHLY/1fhAx+A\""
+            },
+            {
+              "key": "request-context",
+              "value": "appId=cid-v1:"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            }
+          ],
+          "cookie": [],
+          "body": "<!DOCTYPE html>\n<html id=\"root\" lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\"/>\n        <script>var eContext = {\"graphqlResponse\":{\"e248uix4m5ibqb7v\":\"https://demo.evershop.io/search\",\"e248uix4m5ibqb7w\":\"https://demo.evershop.io/cart\",\"e248uix4m5ibqb7x\":{\"totalQty\":1},\"e248uix4m5ibqb7y\":{\"totalQty\":1,\"uuid\":\"3bf60ab4-28c5-4e9b-98e6-ebbd62fce1cf\",\"items\":[{\"cartItemId\":\"90657\",\"thumbnail\":\"https://demositefiles.blob.core.windows.net/images/catalog/9381/3866/plv3878-Purple-thumb.png\",\"qty\":1,\"productName\":\"Nike react infinity run flyknit\",\"productSku\":\"NJC44141-Purple-L\",\"variantOptions\":\"[{\\\"attribute_code\\\":\\\"size\\\",\\\"attribute_name\\\":\\\"Size\\\",\\\"attribute_id\\\":2,\\\"option_id\\\":6,\\\"option_text\\\":\\\"L\\\"},{\\\"attribute_code\\\":\\\"color\\\",\\\"attribute_name\\\":\\\"Color\\\",\\\"attribute_id\\\":3,\\\"option_id\\\":27,\\\"option_text\\\":\\\"Purple\\\"}]\",\"productUrl\":\"/nike-react-infinity-run-flyknit-171\",\"productPrice\":{\"value\":543,\"text\":\"$543.00\"},\"productPriceInclTax\":{\"value\":543,\"text\":\"$543.00\"},\"finalPrice\":{\"value\":543,\"text\":\"$543.00\"},\"finalPriceInclTax\":{\"value\":543,\"text\":\"$543.00\"},\"lineTotal\":{\"value\":543,\"text\":\"$543.00\"},\"lineTotalInclTax\":{\"value\":543,\"text\":\"$543.00\"},\"removeApi\":\"/api/cart/3bf60ab4-28c5-4e9b-98e6-ebbd62fce1cf/items/b25c9da3-c107-47d5-9b9f-6561cd7a125f\",\"updateQtyApi\":\"/api/cart/3bf60ab4-28c5-4e9b-98e6-ebbd62fce1cf/items/b25c9da3-c107-47d5-9b9f-6561cd7a125f\",\"errors\":[]}]},\"e248uix4m5ibqb7z\":{\"priceIncludingTax\":true},\"e248uix4m5ibqb80\":{\"totalQty\":1,\"subTotal\":{\"value\":543,\"text\":\"$543.00\"},\"subTotalInclTax\":{\"value\":543,\"text\":\"$543.00\"},\"grandTotal\":{\"value\":543,\"text\":\"$543.00\"},\"totalTaxAmount\":{\"value\":0,\"text\":\"$0.00\"},\"discountAmount\":{\"value\":0,\"text\":\"$0.00\"},\"coupon\":null},\"e248uix4m5ibqb81\":{\"priceIncludingTax\":true},\"e248uix4m5ibqb82\":\"https://demo.evershop.io/checkout\",\"e248uix4m5ibqb83\":{\"breadcrumbs\":[{\"title\":\"Home\",\"url\":\"/\"},{\"title\":\"Shopping cart\",\"url\":\"https://demo.evershop.io/cart\"}]},\"e248uix4m5ibqb84\":{\"copyRight\":\"\\u00A9 2022 Evershop. All Rights Reserved.\"},\"e248uix4m5ibqb85\":{\"title\":\"Shopping cart\",\"description\":\"Shopping cart\"},\"e248uix4m5ibqb86\":{\"headTags\":{\"metas\":[{\"name\":\"robots\",\"content\":\"noindex\",\"charSet\":null,\"httpEquiv\":null,\"property\":null,\"itemProp\":null,\"itemType\":null,\"itemID\":null,\"lang\":null}],\"links\":[],\"scripts\":[],\"base\":null}},\"e248uix4m5ibqb87\":{\"logo\":{\"src\":null,\"alt\":null,\"width\":null,\"height\":null}},\"e248uix4m5ibqb88\":null,\"e248uix4m5ibqb89\":\"https://demo.evershop.io/account\",\"e248uix4m5ibqb8a\":\"https://demo.evershop.io/account/login\",\"e248uix4m5ibqb8b\":{\"applyCouponApi\":\"/api/carts/3bf60ab4-28c5-4e9b-98e6-ebbd62fce1cf/coupons\"},\"e4ov33uxmbhq87bm\":{\"menus\":[{\"id\":\"4ov33uxmbhq87bz\",\"name\":\"Shop \\u2764\\uFE0F\",\"url\":\"javascript:void(0)\",\"type\":\"custom\",\"uuid\":\"javascript:void(0)\",\"children\":[{\"name\":\"Men\",\"url\":\"/men\",\"type\":\"custom\",\"uuid\":\"/men\"},{\"name\":\"Women\",\"url\":\"/women\",\"type\":\"custom\",\"uuid\":\"/women\"}]},{\"id\":\"4ov33uxmbhq87c2\",\"name\":\"About us\",\"url\":\"/page/about-us\",\"type\":\"custom\",\"uuid\":\"/page/about-us\",\"children\":[]}],\"isMain\":true,\"className\":\"\"}},\"propsMap\":{\"137dcfd8bf7950dd6201684efdcb40a1\":[{\"origin\":\"searchPageUrl\",\"alias\":\"e248uix4m5ibqb7v\"}],\"5248a628c0ba0eb2edc726fbc70778f8\":[{\"origin\":\"cartUrl\",\"alias\":\"e248uix4m5ibqb7w\"},{\"origin\":\"cart\",\"alias\":\"e248uix4m5ibqb7x\"}],\"87b5a6343580ffba5d3cd5dcf3da9b15\":[{\"origin\":\"cart\",\"alias\":\"e248uix4m5ibqb7y\"},{\"origin\":\"setting\",\"alias\":\"e248uix4m5ibqb7z\"}],\"0970d39aae36909e09c0cbec65369c02\":[{\"origin\":\"cart\",\"alias\":\"e248uix4m5ibqb80\"},{\"origin\":\"setting\",\"alias\":\"e248uix4m5ibqb81\"},{\"origin\":\"checkoutUrl\",\"alias\":\"e248uix4m5ibqb82\"}],\"45515ab09f9ce8f561fc40ca4ffb7b2f\":[{\"origin\":\"pageInfo\",\"alias\":\"e248uix4m5ibqb83\"}],\"03ce62a99b643c53cea33f6fc2c573f5\":[{\"origin\":\"themeConfig\",\"alias\":\"e248uix4m5ibqb84\"}],\"170528765f0295e4db900fd92ea387bc\":[{\"origin\":\"pageInfo\",\"alias\":\"e248uix4m5ibqb85\"},{\"origin\":\"themeConfig\",\"alias\":\"e248uix4m5ibqb86\"}],\"2aa0bf53e05360bd37f2dd0982998263\":[],\"a20b83833c6ae10ded5077b0943cfef5\":[{\"origin\":\"themeConfig\",\"alias\":\"e248uix4m5ibqb87\"}],\"18bf66723f1e3394e1ebb5dce01e8097\":[],\"fef4b1d9ae2122930f9c33edbb982d6e\":[{\"origin\":\"customer\",\"alias\":\"e248uix4m5ibqb88\"},{\"origin\":\"accountUrl\",\"alias\":\"e248uix4m5ibqb89\"},{\"origin\":\"loginUrl\",\"alias\":\"e248uix4m5ibqb8a\"}],\"8bdf6e07d5f321c363037c0ecd754c6d\":[{\"origin\":\"cart\",\"alias\":\"e248uix4m5ibqb8b\"}],\"b9b0aede0abb0546fe77c67089bdd6f5\":[{\"origin\":\"collection\",\"alias\":\"e248uix4m5ibqb8c\"}],\"78d4735155d485f34d387c8394613fb7\":[{\"origin\":\"textWidget\",\"alias\":\"e248uix4m5ibqb8g\"}],\"d71e8a0220472a4a5360ae305aa98d5b\":[{\"origin\":\"basicMenuWidget\",\"alias\":\"e248uix4m5ibqb8k\"}],\"e9869af9cb99540caac4704f0a1d6de86\":[{\"origin\":\"basicMenuWidget\",\"alias\":\"e4ov33uxmbhq87bm\"}]},\"widgets\":[{\"sortOrder\":1,\"areaId\":[\"header\"],\"type\":\"basic_menu\",\"id\":\"e9869af9cb99540caac4704f0a1d6de86\"}],\"notifications\":[]}</script>\n        <link href=\"/assets/frontStore/cart/client/0d9613cc5465da55aab1.css\" rel=\"stylesheet\"/>\n        <title>Shopping cart</title>\n        <meta name=\"description\" content=\"Shopping cart\"/>\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\n        <meta name=\"robots\" content=\"noindex\"/>\n    </head>\n    <body id=\"body\">\n        <div id=\"app\" class=\"bg-background\">\n            <div class=\"wrapper\">\n                <div class=\"loading-bar\" style=\"width:0%;display:none\"></div>\n                <div class=\"header grid grid-cols-3\">\n                    <div class=\"\">\n                        <div class=\"flex justify-start gap-6 items-center\">\n                            <nav class=\"p-4 relative md:flex md:justify-center\">\n                                <div class=\"flex justify-between items-center\">\n                                    <div class=\"md:hidden\">\n                                        <a href=\"#\" class=\"text-black focus:outline-none\">\n                                            <svg class=\"w-9 h-9\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n                                                <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M4 6h16M4 12h16m-7 6h7\"></path>\n                                            </svg>\n                                        </a>\n                                    </div>\n                                    <ul class=\"hidden  md:flex md:justify-center md:space-x-10 absolute md:relative left-[-2.5rem] md:left-0 top-full md:top-auto mt-2 md:mt-0 w-screen md:w-auto md:bg-transparent p-4 md:p-0 min-w-[250px] bg-white z-30 divide-y md:divide-y-0\">\n                                        <li class=\"relative group\">\n                                            <a href=\"javascript:void(0)\" class=\"hover:text-gray-300 transition-colors block md:inline-block px-4 py-4 md:px-0 md:py-0\">Shop ❤️</a>\n                                            <ul class=\"md:absolute left-0 top-full mt-0 md:mt-3 w-48 bg-white md:shadow-lg rounded-md md:opacity-0 md:group-hover:opacity-100 md:group-hover:translate-y-0 transform transition-all duration-300 ease-in-out min-w-full md:min-w-[250px] z-30 md:border-t-4\">\n                                                <li>\n                                                    <a href=\"/men\" class=\"block px-8 md:px-4 py-3 text-gray-700 hover:bg-gray-100\">Men</a>\n                                                </li>\n                                                <li>\n                                                    <a href=\"/women\" class=\"block px-8 md:px-4 py-3 text-gray-700 hover:bg-gray-100\">Women</a>\n                                                </li>\n                                            </ul>\n                                        </li>\n                                        <li class=\"relative group\">\n                                            <a href=\"/page/about-us\" class=\"hover:text-gray-300 transition-colors block md:inline-block px-4 py-4 md:px-0 md:py-0\">About us</a>\n                                        </li>\n                                    </ul>\n                                </div>\n                            </nav>\n                        </div>\n                    </div>\n                    <div class=\"logo md:ml-0 flex justify-center items-center\">\n                        <a href=\"/\" class=\"logo-icon\">\n                            <svg width=\"128\" height=\"146\" viewBox=\"0 0 128 146\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                                <path d=\"M32.388 18.0772L1.15175 36.1544L1.05206 72.5081L0.985596 108.895L32.4213 127.039C49.7009 137.008 63.9567 145.182 64.1228 145.182C64.289 145.182 72.8956 140.264 83.2966 134.283C93.6644 128.268 107.82 120.127 114.732 116.139L127.26 108.895V101.119V93.3102L126.529 93.7089C126.097 93.9415 111.941 102.083 95.06 111.853C78.1459 121.622 64.156 129.531 63.9567 129.498C63.724 129.431 52.5587 123.051 39.1005 115.275L14.6099 101.152V72.5746V43.9967L25.6756 37.6165C31.7234 34.1274 42.8223 27.7472 50.2991 23.4273C57.7426 19.1073 63.9899 15.585 64.1228 15.585C64.2557 15.585 72.9288 20.5362 83.3963 26.5841L113.902 43.9967L118.713 41.1657L127.26 36.1544L113.902 28.5447C103.334 22.2974 64.3554 -0.033191 64.0231 3.90721e-05C63.8237 3.90721e-05 49.568 8.14142 32.388 18.0772Z\" fill=\"#1F1F1F\"></path>\n                                <path d=\"M96.0237 54.1983C78.9434 64.0677 64.721 72.2423 64.4219 72.3088C64.0896 72.4084 55.7488 67.7562 44.8826 61.509L25.9082 50.543V58.4186L25.9414 66.2609L44.3841 76.8945C54.5193 82.743 63.1591 87.6611 63.5911 87.8272C64.2557 88.0598 68.9079 85.5011 95.5585 70.1156C112.705 60.1798 126.861 51.9719 127.027 51.839C127.16 51.7061 127.227 48.1505 127.194 43.9302L127.094 36.2541L96.0237 54.1983Z\" fill=\"#1F1F1F\"></path>\n                                <path d=\"M123.771 66.7261C121.943 67.7562 107.854 75.8976 92.4349 84.8033C77.0161 93.7089 64.289 100.986 64.1228 100.986C63.9567 100.986 55.3501 96.0683 44.9491 90.0869L26.0744 79.1874L25.9747 86.8303C25.9082 92.6788 26.0079 94.5729 26.307 94.872C26.9383 95.4369 63.7241 116.604 64.1228 116.604C64.4551 116.604 126.496 80.8821 127.027 80.4169C127.16 80.284 127.227 76.7284 127.194 72.4749L127.094 64.7987L123.771 66.7261Z\" fill=\"#1F1F1F\"></path>\n                            </svg>\n                        </a>\n                    </div>\n                    <div class=\"icon-wrapper flex justify-end space-x-4\">\n                        <div class=\"search-box\">\n                            <a href=\"#\" class=\"search-icon\">\n                                <svg xmlns=\"http://www.w3.org/2000/svg\" style=\"width:2.2rem;height:2.2rem\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n                                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z\"></path>\n                                </svg>\n                            </a>\n                        </div>\n                        <div class=\"mini-cart-wrapper self-center\">\n                            <a class=\"mini-cart-icon\" href=\"https://demo.evershop.io/cart\">\n                                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"2\" stroke=\"currentColor\" aria-hidden=\"true\" width=\"20\" height=\"20\">\n                                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z\"></path>\n                                </svg>\n                                <span>1</span>\n                            </a>\n                        </div>\n                        <div class=\"self-center\">\n                            <a href=\"https://demo.evershop.io/account/login\">\n                                <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"2\" stroke=\"currentColor\" aria-hidden=\"true\" width=\"25\" height=\"25\">\n                                    <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z\"></path>\n                                </svg>\n                            </a>\n                        </div>\n                    </div>\n                </div>\n                <main class=\"content\">\n                    <div class=\"breadcrumb page-width my-8\">\n                        <span>\n                            <a href=\"/\" class=\"text-interactive\">Home</a>\n                            <span> / </span>\n                        </span>\n                        <span>Shopping cart</span>\n                    </div>\n                    <div>\n                        <div class=\"cart page-width\">\n                            <div class=\"cart-page-top\"></div>\n                            <div class=\"cart-page-middle\">\n                                <div class=\"grid gap-16 grid-cols-1 md:grid-cols-4\">\n                                    <div class=\"col-span-1 md:col-span-3\">\n                                        <div id=\"shopping-cart-items\">\n                                            <table class=\"items-table listing\">\n                                                <thead>\n                                                    <tr>\n                                                        <td>\n                                                            <span>Product</span>\n                                                        </td>\n                                                        <td>\n                                                            <span>Price</span>\n                                                        </td>\n                                                        <td class=\"hidden md:table-cell\">\n                                                            <span>Quantity</span>\n                                                        </td>\n                                                        <td class=\"hidden md:table-cell\">\n                                                            <span>Total</span>\n                                                        </td>\n                                                    </tr>\n                                                </thead>\n                                                <tbody>\n                                                    <tr>\n                                                        <td>\n                                                            <div class=\"flex justify-start space-x-4 product-info\">\n                                                                <div class=\"product-image flex justify-center items-center\">\n                                                                    <img class=\"self-center\" src=\"https://demositefiles.blob.core.windows.net/images/catalog/9381/3866/plv3878-Purple-thumb.png\" alt=\"Nike react infinity run flyknit\"/>\n                                                                </div>\n                                                                <div class=\"cart-tem-info\">\n                                                                    <a href=\"/nike-react-infinity-run-flyknit-171\" class=\"name font-semibold hover:underline\">Nike react infinity run flyknit</a>\n                                                                    <div class=\"cart-item-variant-options mt-2\">\n                                                                        <ul>\n                                                                            <li>\n                                                                                <span class=\"attribute-name\">Size\n                                                                                    <!-- -->: \n                                                                                </span>\n                                                                                <span>L</span>\n                                                                            </li>\n                                                                            <li>\n                                                                                <span class=\"attribute-name\">Color\n                                                                                    <!-- -->: \n                                                                                </span>\n                                                                                <span>Purple</span>\n                                                                            </li>\n                                                                        </ul>\n                                                                    </div>\n                                                                    <div class=\"mt-2\">\n                                                                        <a href=\"#\" class=\"text-textSubdued underline\">\n                                                                            <span>Remove</span>\n                                                                        </a>\n                                                                    </div>\n                                                                </div>\n                                                            </div>\n                                                        </td>\n                                                        <td>\n                                                            <div>\n                                                                <span class=\"sale-price\">$543.00</span>\n                                                            </div>\n                                                            <div class=\"md:hidden mt-2 flex justify-end\">\n                                                                <div class=\"qty-box grid grid-cols-3 border border-[#ccc]\">\n                                                                    <button class=\"flex justify-center items-center\" type=\"button\">\n                                                                        <svg xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-minus\" fill=\"none\" viewBox=\"0 0 10 2\">\n                                                                            <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M.5 1C.5.7.7.5 1 .5h8a.5.5 0 110 1H1A.5.5 0 01.5 1z\" fill=\"currentColor\"></path>\n                                                                        </svg>\n                                                                    </button>\n                                                                    <input type=\"text\" value=\"1\" readonly=\"\"/>\n                                                                    <button class=\"flex justify-center items-center\" type=\"button\">\n                                                                        <svg xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-plus\" fill=\"none\" viewBox=\"0 0 10 10\">\n                                                                            <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M1 4.51a.5.5 0 000 1h3.5l.01 3.5a.5.5 0 001-.01V5.5l3.5-.01a.5.5 0 00-.01-1H5.5L5.49.99a.5.5 0 00-1 .01v3.5l-3.5.01H1z\" fill=\"currentColor\"></path>\n                                                                        </svg>\n                                                                    </button>\n                                                                </div>\n                                                            </div>\n                                                        </td>\n                                                        <td class=\"hidden md:table-cell\">\n                                                            <div class=\"qty-box grid grid-cols-3 border border-[#ccc]\">\n                                                                <button class=\"flex justify-center items-center\" type=\"button\">\n                                                                    <svg xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-minus\" fill=\"none\" viewBox=\"0 0 10 2\">\n                                                                        <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M.5 1C.5.7.7.5 1 .5h8a.5.5 0 110 1H1A.5.5 0 01.5 1z\" fill=\"currentColor\"></path>\n                                                                    </svg>\n                                                                </button>\n                                                                <input type=\"text\" value=\"1\" readonly=\"\"/>\n                                                                <button class=\"flex justify-center items-center\" type=\"button\">\n                                                                    <svg xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-plus\" fill=\"none\" viewBox=\"0 0 10 10\">\n                                                                        <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M1 4.51a.5.5 0 000 1h3.5l.01 3.5a.5.5 0 001-.01V5.5l3.5-.01a.5.5 0 00-.01-1H5.5L5.49.99a.5.5 0 00-1 .01v3.5l-3.5.01H1z\" fill=\"currentColor\"></path>\n                                                                    </svg>\n                                                                </button>\n                                                            </div>\n                                                        </td>\n                                                        <td class=\"hidden md:table-cell\">\n                                                            <span>$543.00</span>\n                                                        </td>\n                                                    </tr>\n                                                </tbody>\n                                            </table>\n                                        </div>\n                                        <div class=\"mt-16\">\n                                            <form id=\"couponForm\" action=\"/api/carts/3bf60ab4-28c5-4e9b-98e6-ebbd62fce1cf/coupons\" method=\"POST\">\n                                                <p style=\"font-weight:600\">Promotion code?</p>\n                                                <div class=\"grid grid-cols-3 gap-8\" style=\"width:300px\">\n                                                    <div class=\"col-span-2\">\n                                                        <div class=\"form-field-container null\">\n                                                            <div class=\"field-wrapper flex flex-grow\">\n                                                                <input type=\"text\" name=\"coupon\" placeholder=\"Enter coupon code\" value=\"\"/>\n                                                                <div class=\"field-border\"></div>\n                                                            </div>\n                                                        </div>\n                                                    </div>\n                                                    <div class=\"col-span-1\">\n                                                        <button type=\"button\" class=\"button primary\">\n                                                            <span>Apply</span>\n                                                        </button>\n                                                    </div>\n                                                </div>\n                                            </form>\n                                        </div>\n                                    </div>\n                                    <div class=\"col-span-1 md:col-span-1\">\n                                        <div class=\"summary\">\n                                            <div class=\"grid grid-cols-1 gap-8\">\n                                                <h4>Order summary</h4>\n                                                <div class=\"flex justify-between gap-12\">\n                                                    <div>Sub total</div>\n                                                    <div class=\"text-right\">$543.00</div>\n                                                </div>\n                                                <div class=\"summary-row grand-total flex justify-between\">\n                                                    <div>\n                                                        <div>\n                                                            <div class=\"font-bold\">\n                                                                <span>Total</span>\n                                                            </div>\n                                                            <div>\n                                                                <span class=\"italic\">(\n                                                                    <!-- -->Inclusive of tax $0.00\n                                                                    <!-- -->)\n                                                                </span>\n                                                            </div>\n                                                        </div>\n                                                    </div>\n                                                    <div>\n                                                        <div></div>\n                                                        <div class=\"grand-total-value\">$543.00</div>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                            <div class=\"shopping-cart-checkout-btn flex justify-between mt-8\">\n                                                <a href=\"https://demo.evershop.io/checkout\" class=\"button primary\">\n                                                    <span>CHECKOUT</span>\n                                                </a>\n                                            </div>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"cart-page-bottom\"></div>\n                        </div>\n                    </div>\n                </main>\n                <div class=\"footer\">\n                    <div class=\"footer__default\">\n                        <div class=\"page-width grid grid-cols-1 md:grid-cols-2 gap-8 justify-between\">\n                            <div>\n                                <div class=\"card-icons flex justify-center space-x-4 md:justify-start\">\n                                    <div>\n                                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"38\" height=\"24\" aria-labelledby=\"pi-visa\" viewBox=\"0 0 38 24\">\n                                            <path d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\" opacity=\"0.07\"></path>\n                                            <path fill=\"#fff\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\"></path>\n                                            <path fill=\"#142688\" d=\"M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z\"></path>\n                                        </svg>\n                                    </div>\n                                    <div>\n                                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"38\" height=\"24\" aria-labelledby=\"pi-master\" viewBox=\"0 0 38 24\">\n                                            <path d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\" opacity=\"0.07\"></path>\n                                            <path fill=\"#fff\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\"></path>\n                                            <circle cx=\"15\" cy=\"12\" r=\"7\" fill=\"#EB001B\"></circle>\n                                            <circle cx=\"23\" cy=\"12\" r=\"7\" fill=\"#F79E1B\"></circle>\n                                            <path fill=\"#FF5F00\" d=\"M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z\"></path>\n                                        </svg>\n                                    </div>\n                                    <div>\n                                        <svg viewBox=\"0 0 38 24\" xmlns=\"http://www.w3.org/2000/svg\" width=\"38\" height=\"24\" role=\"img\" aria-labelledby=\"pi-paypal\">\n                                            <title id=\"pi-paypal\">PayPal</title>\n                                            <path opacity=\".07\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\"></path>\n                                            <path fill=\"#fff\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\"></path>\n                                            <path fill=\"#003087\" d=\"M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z\"></path>\n                                            <path fill=\"#3086C8\" d=\"M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z\"></path>\n                                            <path fill=\"#012169\" d=\"M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z\"></path>\n                                        </svg>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"self-center\">\n                                <div class=\"copyright text-center md:text-right text-textSubdued\">\n                                    <span>© 2022 Evershop. All Rights Reserved.</span>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div>\n                    <div class=\"Toastify\"></div>\n                </div>\n            </div>\n        </div>\n        <script src=\"/assets/frontStore/cart/client/0d9613cc5465da55aab1.js\"></script>\n    </body>\n</html>"
+        }
+      ]
+    },
+    {
+      "name": "IncreaseQuantity",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"action\":\"increase\",\r\n    \"qty\":2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://demo.evershop.io/api/cart/0b578e1c68a240a8995901bca6a80d03/items/324377a9-5aa6-43b3-b9a9-52ac51def966",
+          "protocol": "https",
+          "host": ["demo", "evershop", "io"],
+          "path": [
+            "api",
+            "cart",
+            "0b578e1c68a240a8995901bca6a80d03",
+            "items",
+            "324377a9-5aa6-43b3-b9a9-52ac51def966"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "IncreaseQuantityResult",
+          "originalRequest": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"action\":\"increase\",\r\n    \"qty\":2\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://demo.evershop.io/api/cart/0b578e1c68a240a8995901bca6a80d03/items/324377a9-5aa6-43b3-b9a9-52ac51def966",
+              "protocol": "https",
+              "host": ["demo", "evershop", "io"],
+              "path": [
+                "api",
+                "cart",
+                "0b578e1c68a240a8995901bca6a80d03",
+                "items",
+                "324377a9-5aa6-43b3-b9a9-52ac51def966"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Length",
+              "value": "1213"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 04 Jun 2025 08:27:42 GMT"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"4bd-PH082j7TKQmsbIaztvYeGTOInIs\""
+            },
+            {
+              "key": "request-context",
+              "value": "appId=cid-v1:"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"data\": {\n        \"item\": {\n            \"cart_item_id\": 90645,\n            \"uuid\": \"324377a9-5aa6-43b3-b9a9-52ac51def966\",\n            \"cart_id\": 76646,\n            \"product_id\": 171,\n            \"productUrl\": \"/nike-react-infinity-run-flyknit-171\",\n            \"product_uuid\": \"ed6ddd29-f245-4088-8255-de4804fb04a5\",\n            \"product_sku\": \"NJC44141-Purple-L\",\n            \"group_id\": 1,\n            \"category_id\": null,\n            \"product_name\": \"Nike react infinity run flyknit\",\n            \"thumbnail\": \"https://demositefiles.blob.core.windows.net/images/catalog/9381/3866/plv3878-Purple-thumb.png\",\n            \"product_weight\": 9.4,\n            \"tax_class_id\": 1,\n            \"qty\": 8,\n            \"variant_group_id\": 100,\n            \"variant_options\": \"[{\\\"attribute_code\\\":\\\"size\\\",\\\"attribute_name\\\":\\\"Size\\\",\\\"attribute_id\\\":2,\\\"option_id\\\":6,\\\"option_text\\\":\\\"L\\\"},{\\\"attribute_code\\\":\\\"color\\\",\\\"attribute_name\\\":\\\"Color\\\",\\\"attribute_id\\\":3,\\\"option_id\\\":27,\\\"option_text\\\":\\\"Purple\\\"}]\",\n            \"removeUrl\": \"/api/cart/mine/items/324377a9-5aa6-43b3-b9a9-52ac51def966\",\n            \"tax_percent\": 0,\n            \"product_price\": 543,\n            \"product_price_incl_tax\": 543,\n            \"tax_amount_before_discount\": 0,\n            \"final_price\": 543,\n            \"final_price_incl_tax\": 543,\n            \"line_total\": 4344,\n            \"line_total_incl_tax\": 4344,\n            \"discount_amount\": 0,\n            \"tax_amount\": 0,\n            \"line_total_with_discount\": 4344,\n            \"line_total_with_discount_incl_tax\": 4344,\n            \"errors\": {}\n        },\n        \"count\": 1,\n        \"cartId\": \"0b578e1c-68a2-40a8-9959-01bca6a80d03\"\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "DecreaseQuantity",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"action\":\"decrease\",\r\n    \"qty\":1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://demo.evershop.io/api/cart/0b578e1c68a240a8995901bca6a80d03/items/324377a9-5aa6-43b3-b9a9-52ac51def966",
+          "protocol": "https",
+          "host": ["demo", "evershop", "io"],
+          "path": [
+            "api",
+            "cart",
+            "0b578e1c68a240a8995901bca6a80d03",
+            "items",
+            "324377a9-5aa6-43b3-b9a9-52ac51def966"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "DecreaseQuantityResult",
+          "originalRequest": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"action\":\"decrease\",\r\n    \"qty\":1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://demo.evershop.io/api/cart/0b578e1c68a240a8995901bca6a80d03/items/324377a9-5aa6-43b3-b9a9-52ac51def966",
+              "protocol": "https",
+              "host": ["demo", "evershop", "io"],
+              "path": [
+                "api",
+                "cart",
+                "0b578e1c68a240a8995901bca6a80d03",
+                "items",
+                "324377a9-5aa6-43b3-b9a9-52ac51def966"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Length",
+              "value": "1213"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 04 Jun 2025 08:28:20 GMT"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"4bd-krR5confCarxm6yWsXF/wzU4Thg\""
+            },
+            {
+              "key": "request-context",
+              "value": "appId=cid-v1:"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"data\": {\n        \"item\": {\n            \"cart_item_id\": 90645,\n            \"uuid\": \"324377a9-5aa6-43b3-b9a9-52ac51def966\",\n            \"cart_id\": 76646,\n            \"product_id\": 171,\n            \"productUrl\": \"/nike-react-infinity-run-flyknit-171\",\n            \"product_uuid\": \"ed6ddd29-f245-4088-8255-de4804fb04a5\",\n            \"product_sku\": \"NJC44141-Purple-L\",\n            \"group_id\": 1,\n            \"category_id\": null,\n            \"product_name\": \"Nike react infinity run flyknit\",\n            \"thumbnail\": \"https://demositefiles.blob.core.windows.net/images/catalog/9381/3866/plv3878-Purple-thumb.png\",\n            \"product_weight\": 9.4,\n            \"tax_class_id\": 1,\n            \"qty\": 7,\n            \"variant_group_id\": 100,\n            \"variant_options\": \"[{\\\"attribute_code\\\":\\\"size\\\",\\\"attribute_name\\\":\\\"Size\\\",\\\"attribute_id\\\":2,\\\"option_id\\\":6,\\\"option_text\\\":\\\"L\\\"},{\\\"attribute_code\\\":\\\"color\\\",\\\"attribute_name\\\":\\\"Color\\\",\\\"attribute_id\\\":3,\\\"option_id\\\":27,\\\"option_text\\\":\\\"Purple\\\"}]\",\n            \"removeUrl\": \"/api/cart/mine/items/324377a9-5aa6-43b3-b9a9-52ac51def966\",\n            \"tax_percent\": 0,\n            \"product_price\": 543,\n            \"product_price_incl_tax\": 543,\n            \"tax_amount_before_discount\": 0,\n            \"final_price\": 543,\n            \"final_price_incl_tax\": 543,\n            \"line_total\": 3801,\n            \"line_total_incl_tax\": 3801,\n            \"discount_amount\": 0,\n            \"tax_amount\": 0,\n            \"line_total_with_discount\": 3801,\n            \"line_total_with_discount_incl_tax\": 3801,\n            \"errors\": {}\n        },\n        \"count\": 1,\n        \"cartId\": \"0b578e1c-68a2-40a8-9959-01bca6a80d03\"\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "DeleteCartItem",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://demo.evershop.io/api/cart/3bf60ab4-28c5-4e9b-98e6-ebbd62fce1cf/items/b25c9da3-c107-47d5-9b9f-6561cd7a125f",
+          "protocol": "https",
+          "host": ["demo", "evershop", "io"],
+          "path": [
+            "api",
+            "cart",
+            "3bf60ab4-28c5-4e9b-98e6-ebbd62fce1cf",
+            "items",
+            "b25c9da3-c107-47d5-9b9f-6561cd7a125f"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "New Request",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://demo.evershop.io/api/cart/0b578e1c68a240a8995901bca6a80d03/items/b25c9da3-c107-47d5-9b9f-6561cd7a125f",
+              "protocol": "https",
+              "host": ["demo", "evershop", "io"],
+              "path": [
+                "api",
+                "cart",
+                "0b578e1c68a240a8995901bca6a80d03",
+                "items",
+                "b25c9da3-c107-47d5-9b9f-6561cd7a125f"
+              ]
+            }
+          },
+          "status": "Internal Server Error",
+          "code": 500,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Length",
+              "value": "51"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 04 Jun 2025 08:58:47 GMT"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"33-n1gt7zYKzVQWM56uExPTu6mujpc\""
+            },
+            {
+              "key": "request-context",
+              "value": "appId=cid-v1:"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            }
+          ],
+          "cookie": [
+            {
+              "expires": "Invalid Date"
+            }
+          ],
+          "body": "{\n    \"error\": {\n        \"message\": \"Cart not found\",\n        \"status\": 500\n    }\n}"
+        },
+        {
+          "name": "DeleteCartItemResult",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://demo.evershop.io/api/cart/3bf60ab4-28c5-4e9b-98e6-ebbd62fce1cf/items/b25c9da3-c107-47d5-9b9f-6561cd7a125f",
+              "protocol": "https",
+              "host": ["demo", "evershop", "io"],
+              "path": [
+                "api",
+                "cart",
+                "3bf60ab4-28c5-4e9b-98e6-ebbd62fce1cf",
+                "items",
+                "b25c9da3-c107-47d5-9b9f-6561cd7a125f"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Length",
+              "value": "1155"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 04 Jun 2025 10:00:03 GMT"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"483-KJVUWDLiUdOxqSiDQ0mgowAJqrU\""
+            },
+            {
+              "key": "request-context",
+              "value": "appId=cid-v1:"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"data\": {\n        \"item\": {\n            \"cart_item_id\": 90657,\n            \"uuid\": \"b25c9da3-c107-47d5-9b9f-6561cd7a125f\",\n            \"cart_id\": 76656,\n            \"product_id\": 171,\n            \"productUrl\": \"/nike-react-infinity-run-flyknit-171\",\n            \"product_uuid\": \"ed6ddd29-f245-4088-8255-de4804fb04a5\",\n            \"product_sku\": \"NJC44141-Purple-L\",\n            \"group_id\": 1,\n            \"category_id\": null,\n            \"product_name\": \"Nike react infinity run flyknit\",\n            \"thumbnail\": \"https://demositefiles.blob.core.windows.net/images/catalog/9381/3866/plv3878-Purple-thumb.png\",\n            \"product_weight\": 9.4,\n            \"tax_class_id\": 1,\n            \"qty\": 3,\n            \"variant_group_id\": 100,\n            \"variant_options\": \"[{\\\"attribute_code\\\":\\\"size\\\",\\\"attribute_name\\\":\\\"Size\\\",\\\"attribute_id\\\":2,\\\"option_id\\\":6,\\\"option_text\\\":\\\"L\\\"},{\\\"attribute_code\\\":\\\"color\\\",\\\"attribute_name\\\":\\\"Color\\\",\\\"attribute_id\\\":3,\\\"option_id\\\":27,\\\"option_text\\\":\\\"Purple\\\"}]\",\n            \"removeUrl\": \"/api/cart/mine/items/b25c9da3-c107-47d5-9b9f-6561cd7a125f\",\n            \"tax_percent\": 0,\n            \"product_price\": 543,\n            \"product_price_incl_tax\": 543,\n            \"tax_amount_before_discount\": 0,\n            \"final_price\": 543,\n            \"final_price_incl_tax\": 543,\n            \"line_total\": 1629,\n            \"line_total_incl_tax\": 1629,\n            \"discount_amount\": 0,\n            \"tax_amount\": 0,\n            \"line_total_with_discount\": 1629,\n            \"line_total_with_discount_incl_tax\": 1629,\n            \"errors\": {}\n        }\n    }\n}"
+        }
+      ]
+    }
+  ]
+}
